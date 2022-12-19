@@ -1,0 +1,104 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  font-size: 14px;
+
+  --color-primary: hsl(0, 0%, 100%);
+  --color-canvas: hsl(30, 38%, 92%);
+  --color-accent: hsl(158, 36%, 37%);
+  --color-accent-dark: hsl(156, 44%, 18%);
+  --color-text-primary: hsl(212, 21%, 14%);
+  --color-text-secondary: hsl(228, 12%, 48%);
+}
+
+body {
+  color: var(--color-text-secondary);
+  background-color: var(--color-canvas);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+body,
+button {
+  font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+  color: var(--color-text-primary);
+  font-family: 'Fraunces', serif;
+  font-size: 2.3rem;
+  line-height: 2.25rem;
+}
+
+article {
+  background-color: var(--color-primary);
+  display: flex;
+  flex-direction: row;
+  max-width: 600px;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 32px;
+}
+
+img {
+  max-width: 50%;
+}
+
+div {
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+button {
+  color: var(--color-primary);
+  background-color: var(--color-accent);
+  font-weight: 700;
+  border: none;
+  padding-block: 16px;
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: var(--color-accent-dark);
+}
+
+.label {
+  text-transform: uppercase;
+  font-weight: 100;
+  font-size: 0.8rem;
+  letter-spacing: 0.4rem;
+}
+
+.description {
+  line-height: 1.65rem;
+}
+
+.price {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.discounted-price {
+  color: var(--color-accent);
+  font-family: 'Fraunces', serif;
+  font-size: 2.3rem;
+}
+
+.original-price {
+  text-decoration: line-through;
+  font-size: 0.9rem;
+}

@@ -22,11 +22,17 @@
   <body>
     <main>
       <article>
-        <img
-          src="./images/image-product-desktop.jpg"
-          alt="A bottle of perfume labeled 'Gabrielle Chanel Paris'"
-        />
-        <div>
+        <picture class="item">
+          <source
+            media="(max-width: 600px)"
+            srcset="./images/image-product-mobile.jpg"
+          />
+          <img
+            src="./images/image-product-desktop.jpg"
+            alt="A bottle of perfume labeled 'Gabrielle Chanel Paris'"
+          />
+        </picture>
+        <div class="item">
           <p class="label">Perfume</p>
           <h1>Gabrielle Essence Eau De Parfum</h1>
           <p class="description">

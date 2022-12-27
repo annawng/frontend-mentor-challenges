@@ -6,7 +6,7 @@
 
   function init() {
     qs('button').addEventListener('click', handleClick);
-    const numbers = qsa('li');
+    const numbers = qsa('input');
     numbers.forEach((number) => number.addEventListener('click', selectNumber));
   }
 
@@ -21,14 +21,20 @@
   function selectNumber(e) {
     const clicked = e.target;
     if (selected) {
-      selected.classList.remove('selected');
+      getLabel(selected.id).classList.remove('selected');
     }
-    clicked.classList.add('selected');
+    getLabel(e.target.id).classList.add('selected');
     selected = clicked;
+
+    qs('button').disabled = false;
   }
 
   function setRating() {
-    qs('.rating').innerHTML = selected.innerHTML;
+    qs('.rating').innerHTML = selected.value;
+  }
+
+  function getLabel(id) {
+    return qs(`.${id}`);
   }
 
   function qs(selector) {

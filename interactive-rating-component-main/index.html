@@ -22,9 +22,9 @@
   </head>
   <body>
     <main>
-      <article class="rating-state">
+      <section class="rating-state">
         <div class="icon">
-          <img src="./images/icon-star.svg" alt="" />
+          <img src="./images/icon-star.svg" alt="" aria-hidden="true" />
         </div>
         <div class="text">
           <h1>How did we do?</h1>
@@ -33,17 +33,30 @@
             feedback is appreciated to help us improve our offering!
           </p>
         </div>
-        <ul>
-          <li>1</li>
-          <li>2</li>
-          <li>3</li>
-          <li>4</li>
-          <li>5</li>
-        </ul>
-        <button>Submit</button>
-      </article>
-      <article class="thank-you-state hidden">
-        <img src="./images/illustration-thank-you.svg" alt="" />
+        <form>
+          <fieldset>
+            <div class="options">
+              <input type="radio" id="rating-1" name="rating" value="1" />
+              <label class="option rating-1" for="rating-1">1</label>
+              <input type="radio" id="rating-2" name="rating" value="2" />
+              <label class="option rating-2" for="rating-2">2</label>
+              <input type="radio" id="rating-3" name="rating" value="3" />
+              <label class="option rating-3" for="rating-3">3</label>
+              <input type="radio" id="rating-4" name="rating" value="4" />
+              <label class="option rating-4" for="rating-4">4</label>
+              <input type="radio" id="rating-5" name="rating" value="5" />
+              <label class="option rating-5" for="rating-5">5</label>
+            </div>
+          </fieldset>
+        </form>
+        <button type="submit" disabled>Submit</button>
+      </section>
+      <section class="thank-you-state hidden">
+        <img
+          src="./images/illustration-thank-you.svg"
+          alt=""
+          aria-hidden="true"
+        />
         <p class="rating-msg">
           You selected <span class="rating"></span> out of 5
         </p>
@@ -54,7 +67,7 @@
             more support, don't hesitate to get in touch!
           </p>
         </div>
-      </article>
+      </section>
     </main>
   </body>
 </html>

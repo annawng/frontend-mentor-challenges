@@ -60,7 +60,7 @@ body {
   align-items: center;
 }
 
-article {
+section {
   background: var(--gradient);
   max-width: 410px;
   margin: 2.4rem;
@@ -93,25 +93,34 @@ p {
   line-height: 2.4rem;
 }
 
+fieldset {
+  border: none;
+  padding: 0;
+}
+
 p,
-li {
+.option {
   color: var(--color-text-secondary);
 }
 
 p,
-li,
-button {
+button,
+.option {
   font-size: 1.5rem;
 }
 
-ul {
+input {
+  display: none;
+}
+
+.options {
   padding: 0;
   list-style: none;
   display: flex;
   justify-content: space-between;
 }
 
-li,
+.option,
 .icon {
   background-color: var(--color-primary);
   width: 5rem;
@@ -121,13 +130,13 @@ li,
   line-height: 5rem;
 }
 
-li,
+.option,
 button {
   cursor: pointer;
   transition: 0.3s;
 }
 
-li:hover {
+.option:hover {
   color: var(--color-text-primary);
   background-color: var(--color-secondary);
 }
@@ -146,6 +155,12 @@ button {
 button:hover {
   color: var(--color-secondary);
   background-color: var(--color-text-primary);
+}
+
+button:disabled {
+  color: var(--color-text-primary);
+  background-color: var(--color-text-secondary);
+  cursor: not-allowed;
 }
 
 .hidden {
@@ -171,7 +186,7 @@ button:hover {
 }
 
 @media (max-width: 400px) {
-  article {
+  section {
     border-radius: 16px;
     gap: 2.4rem;
   }
@@ -185,8 +200,8 @@ button:hover {
     margin-top: -1rem;
   }
 
-  li,
-  button {
+  button,
+  .option {
     font-size: 1.3rem;
   }
 
@@ -194,7 +209,7 @@ button:hover {
     letter-spacing: 0.2rem;
   }
 
-  li,
+  .option,
   .icon {
     width: 4.2rem;
     height: 4.2rem;

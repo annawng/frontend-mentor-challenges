@@ -1,0 +1,28 @@
+main {
+  color: $color-primary;
+  background-color: $color-neutral-dark;
+  height: 100vh;
+  @include flex-vertical();
+  align-items: center;
+}
+
+h1 {
+  margin-top: 0.8rem;
+  margin-bottom: -0.2rem;
+}
+
+strong {
+  color: $color-secondary;
+}
+
+h1,
+span {
+  color: $color-neutral-lightest;
+}
+
+hr {
+  background-color: $color-neutral-light;
+  border: none;
+  height: 1px;
+  margin-block: 1.4rem;
+}

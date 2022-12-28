@@ -1,0 +1,198 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+}
+
+h1 {
+  font-size: 2.2rem;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+p {
+  font-weight: 300;
+}
+
+p,
+strong {
+  font-size: 1.5rem;
+  line-height: 2.6rem;
+  letter-spacing: 0.02rem;
+}
+
+h1,
+span {
+  transition: 0.3s;
+}
+h1:hover,
+span:hover {
+  cursor: pointer;
+  color: hsl(178deg, 100%, 50%);
+}
+
+.info > p {
+  font-weight: 300;
+  font-size: 1.57rem;
+}
+
+@media (min-width: 400px) {
+  .info > p {
+    font-size: 1.77rem;
+  }
+}
+.card {
+  background-color: hsl(216deg, 50%, 16%);
+  max-width: 345px;
+  padding: 2.4rem;
+  border-radius: 16px;
+  margin: 2.4rem;
+}
+
+.image-container {
+  position: relative;
+}
+.image-container div,
+.image-container img {
+  border-radius: 8px;
+}
+
+.image-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 255, 247, 0.5);
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+  transition: 0.3s;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.image-overlay img {
+  width: 4.5rem;
+}
+.image-overlay:hover {
+  opacity: 1;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.2rem;
+  margin-top: 1.6rem;
+}
+.info div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.info div img {
+  margin-right: 0.8rem;
+}
+
+.creator {
+  display: flex;
+  align-items: center;
+}
+.creator img {
+  max-width: 3.2rem;
+  margin-right: 1.6rem;
+  border: 1px solid hsl(0deg, 0%, 100%);
+  border-radius: 100%;
+}
+
+@media (min-width: 400px) {
+  .info > p {
+    margin-block: 0.5rem;
+  }
+  .info > div {
+    margin-block: 0.6rem;
+  }
+  .creator {
+    margin-block: 0.6rem;
+  }
+}
+main {
+  color: hsl(215deg, 51%, 70%);
+  background-color: hsl(217deg, 54%, 11%);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  margin-top: 0.8rem;
+  margin-bottom: -0.2rem;
+}
+
+strong {
+  color: hsl(178deg, 100%, 50%);
+}
+
+h1,
+span {
+  color: hsl(0deg, 0%, 100%);
+}
+
+hr {
+  background-color: hsl(215deg, 32%, 27%);
+  border: none;
+  height: 1px;
+  margin-block: 1.4rem;
+}/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,44 @@
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Outfit', sans-serif;
+}
+
+h1 {
+  font-size: 2.2rem;
+  width: fit-content;
+}
+
+p {
+  font-weight: 300;
+}
+
+p,
+strong {
+  font-size: 1.5rem;
+  line-height: 2.6rem;
+  letter-spacing: 0.02rem;
+}
+
+h1,
+span {
+  transition: 0.3s;
+
+  &:hover {
+    cursor: pointer;
+    color: $color-secondary;
+  }
+}
+
+.info > p {
+  font-weight: 300;
+  font-size: 1.57rem;
+}
+
+@media (min-width: 400px) {
+  .info > p {
+    font-size: 1.77rem;
+  }
+}

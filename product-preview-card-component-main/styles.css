@@ -108,6 +108,10 @@ button:hover {
   background-color: var(--color-accent-dark);
 }
 
+button:focus-visible {
+  outline-offset: 0.25rem;
+}
+
 .label {
   text-transform: uppercase;
   font-weight: 100;

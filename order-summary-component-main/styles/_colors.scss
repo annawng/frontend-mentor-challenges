@@ -1,0 +1,63 @@
+body {
+  background-color: $color-primary;
+}
+
+main {
+  background-color: $color-neutral-lightest;
+  box-shadow: 0 20px 20px rgb($color-neutral, 0.2);
+}
+
+h1,
+h2 {
+  color: $color-neutral-dark;
+}
+
+p,
+.summary > a {
+  color: $color-neutral;
+}
+
+button {
+  border: none;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+button,
+a {
+  transition: 0.3s;
+}
+
+a {
+  color: $color-secondary;
+
+  &:hover {
+    color: $color-secondary-light;
+    text-decoration: none;
+  }
+}
+
+.plan {
+  background-color: $color-neutral-light;
+}
+
+.pay-btn {
+  background-color: $color-secondary;
+  color: $color-neutral-lightest;
+  box-shadow: 0 20px 20px rgb($color-secondary, 0.2);
+
+  &:hover {
+    background-color: $color-secondary-light;
+  }
+}
+
+.cancel-btn {
+  background-color: transparent;
+  color: $color-neutral;
+
+  &:hover {
+    color: $color-neutral-dark;
+  }
+}

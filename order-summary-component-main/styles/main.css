@@ -1,0 +1,321 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+body {
+  background-image: url("../images/pattern-background-mobile.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top right;
+}
+
+body,
+.summary {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  border-radius: 20px;
+  overflow: hidden;
+  width: 87%;
+  max-width: 440px;
+}
+main > img {
+  width: 100%;
+}
+
+h1 {
+  margin-top: 0.5rem;
+  margin-bottom: -1rem;
+}
+
+.summary {
+  gap: 2.4rem;
+  padding: 2.4rem;
+  margin-bottom: 0.4rem;
+}
+.summary > p {
+  text-align: center;
+  line-height: 2.5rem;
+  width: 90%;
+}
+
+.plan {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  border-radius: 8px;
+  padding: 1.6rem;
+}
+.plan div {
+  flex-grow: 2;
+  margin-left: 2rem;
+}
+.plan p {
+  text-align: start;
+}
+
+.pay-btn {
+  width: 100%;
+  padding: 1.4rem 2rem;
+  border-radius: 10px;
+  margin-bottom: -0.2rem;
+}
+.pay-btn:focus-visible {
+  outline-offset: 0.3rem;
+}
+
+@media (min-width: 500px) {
+  body {
+    background-image: url("../images/pattern-background-desktop.svg");
+    background-size: contain;
+  }
+  .summary {
+    padding: 3.6rem 4.5rem;
+  }
+  .plan {
+    padding: 2.6rem;
+    border-radius: 12px;
+  }
+  .pay-btn {
+    margin-bottom: 0.2rem;
+  }
+}
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 1.5rem;
+}
+
+h1 {
+  font-size: 2.2rem;
+}
+
+h2,
+.plan {
+  font-size: 1.42rem;
+}
+
+a {
+  font-size: 1.3rem;
+}
+
+h1,
+h2,
+a,
+.cancel-btn {
+  font-weight: 900;
+}
+
+.pay-btn {
+  font-weight: 700;
+}
+
+@media (min-width: 500px) {
+  body,
+h2 {
+    font-size: 1.6rem;
+  }
+  h1 {
+    font-size: 2.8rem;
+  }
+  h2,
+.plan {
+    font-size: 1.6rem;
+  }
+  a {
+    font-size: 1.4rem;
+  }
+}
+body {
+  background-color: hsl(225deg, 100%, 94%);
+}
+
+main {
+  background-color: hsl(0deg, 0%, 100%);
+  box-shadow: 0 20px 20px rgba(114, 128, 167, 0.2);
+}
+
+h1,
+h2 {
+  color: hsl(223deg, 47%, 23%);
+}
+
+p,
+.summary > a {
+  color: hsl(224deg, 23%, 55%);
+}
+
+button {
+  border: none;
+}
+button:hover {
+  cursor: pointer;
+}
+
+button,
+a {
+  transition: 0.3s;
+}
+
+a {
+  color: hsl(245deg, 75%, 52%);
+}
+a:hover {
+  color: hsl(245deg, 83%, 68%);
+  text-decoration: none;
+}
+
+.plan {
+  background-color: hsl(225deg, 100%, 98%);
+}
+
+.pay-btn {
+  background-color: hsl(245deg, 75%, 52%);
+  color: hsl(0deg, 0%, 100%);
+  box-shadow: 0 20px 20px rgba(56, 41, 224, 0.2);
+}
+.pay-btn:hover {
+  background-color: hsl(245deg, 83%, 68%);
+}
+
+.cancel-btn {
+  background-color: transparent;
+  color: hsl(224deg, 23%, 55%);
+}
+.cancel-btn:hover {
+  color: hsl(223deg, 47%, 23%);
+}
+
+body {
+  background-image: url("../images/pattern-background-mobile.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top right;
+}
+
+body,
+.summary {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  border-radius: 20px;
+  overflow: hidden;
+  width: 87%;
+  max-width: 440px;
+}
+main > img {
+  width: 100%;
+}
+
+h1 {
+  margin-top: 0.5rem;
+  margin-bottom: -1rem;
+}
+
+.summary {
+  gap: 2.4rem;
+  padding: 2.4rem;
+  margin-bottom: 0.4rem;
+}
+.summary > p {
+  text-align: center;
+  line-height: 2.5rem;
+  width: 90%;
+}
+
+.plan {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  border-radius: 8px;
+  padding: 1.6rem;
+}
+.plan div {
+  flex-grow: 2;
+  margin-left: 2rem;
+}
+.plan p {
+  text-align: start;
+}
+
+.pay-btn {
+  width: 100%;
+  padding: 1.4rem 2rem;
+  border-radius: 10px;
+  margin-bottom: -0.2rem;
+}
+.pay-btn:focus-visible {
+  outline-offset: 0.3rem;
+}
+
+@media (min-width: 500px) {
+  body {
+    background-image: url("../images/pattern-background-desktop.svg");
+    background-size: contain;
+  }
+  .summary {
+    padding: 3.6rem 4.5rem;
+  }
+  .plan {
+    padding: 2.6rem;
+    border-radius: 12px;
+  }
+  .pay-btn {
+    margin-bottom: 0.2rem;
+  }
+}/*# sourceMappingURL=main.css.map */

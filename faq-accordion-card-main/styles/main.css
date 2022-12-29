@@ -1,0 +1,160 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+h1 {
+  font-size: 3.2rem;
+  text-align: center;
+  color: hsl(238deg, 29%, 16%);
+}
+
+h2 {
+  font-weight: 400;
+  font-size: 1.32rem;
+}
+
+p {
+  font-size: 1.2rem;
+  color: hsl(240deg, 6%, 50%);
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(hsl(273deg, 75%, 66%), hsl(240deg, 73%, 65%));
+}
+
+main {
+  position: relative;
+  width: 500px;
+  max-width: 87%;
+  padding: 12.5rem 2.5rem 5rem;
+  border-radius: 24px;
+  background-color: hsl(0deg, 0%, 100%);
+  box-shadow: 0 30px 50px -4px hsl(255deg, 48%, 45%);
+}
+
+h1 {
+  margin-bottom: 0.6rem;
+}
+
+details {
+  padding-block: 1.6rem;
+  border-bottom: 1px solid hsl(240deg, 5%, 91%);
+}
+
+.accordion-trigger {
+  list-style: none;
+  cursor: pointer;
+  position: relative;
+  width: 100%;
+  color: hsl(237deg, 12%, 33%);
+}
+.accordion-trigger::-webkit-details-marker {
+  display: none;
+}
+.accordion-trigger::after {
+  content: "";
+  border: solid hsl(14deg, 88%, 65%);
+  border-width: 0 2px 2px 0;
+  width: 0.6rem;
+  height: 0.6rem;
+  pointer-events: none;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-80%) rotate(45deg);
+  transition-duration: 0.3s;
+}
+
+.accordion-title {
+  transition-duration: 0.3s;
+}
+.accordion-title:hover {
+  color: hsl(14deg, 88%, 65%);
+}
+
+.accordion-panel {
+  display: none;
+  width: 95%;
+  margin-top: 0.6rem;
+}
+
+details[open] .accordion-trigger::after {
+  transform: translateY(-50%) rotate(225deg);
+}
+details[open] .accordion-panel {
+  display: block;
+}
+details[open] .accordion-title {
+  font-weight: 700;
+  color: hsl(238deg, 29%, 16%);
+}
+details[open] .accordion-title:hover {
+  color: hsl(14deg, 88%, 65%);
+}
+
+img {
+  height: auto;
+  position: absolute;
+  right: 0;
+  left: 0;
+  margin-inline: auto;
+  top: 0;
+}
+
+.graphic {
+  transform: translateY(-60%);
+}/*# sourceMappingURL=main.css.map */

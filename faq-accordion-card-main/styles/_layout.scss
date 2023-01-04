@@ -1,18 +1,31 @@
+html {
+  height: auto;
+  min-height: 100%;
+  overflow: auto;
+}
+
 body {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   background: linear-gradient(
     $color-bg-gradient-top,
     $color-bg-gradient-bottom
   );
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.container {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  left: 0;
+  margin: auto;
+  transform: translateY(-250px);
+  width: 600px;
+  max-width: 87%;
 }
 
 main {
   position: relative;
-  width: 500px;
-  max-width: 87%;
   padding: 12.5rem 2.5rem 5rem;
   border-radius: 24px;
   background-color: $color-neutral-lightest;
@@ -21,4 +34,27 @@ main {
 
 h1 {
   margin-bottom: 0.6rem;
+}
+
+@media (min-width: 975px) {
+  .container {
+    width: 900px;
+  }
+
+  main {
+    padding: 8rem 10rem;
+    display: flex;
+    justify-content: end;
+    overflow: hidden;
+  }
+
+  h1 {
+    text-align: start;
+    margin-bottom: 1.4rem;
+    margin-top: -2rem;
+  }
+
+  .text {
+    width: 50%;
+  }
 }

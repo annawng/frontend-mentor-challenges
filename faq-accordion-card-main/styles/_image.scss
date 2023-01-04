@@ -1,12 +1,57 @@
 img {
   height: auto;
   position: absolute;
-  right: 0;
-  left: 0;
-  margin-inline: auto;
-  top: 0;
 }
 
-.graphic {
-  transform: translateY(-60%);
+@media (max-width: 974px) {
+  img {
+    right: 0;
+    left: 0;
+    margin-inline: auto;
+    top: 0;
+  }
+
+  .graphic {
+    transform: translateY(-60%);
+  }
+
+  .desktop {
+    display: none;
+  }
+}
+
+@media (min-width: 975px) {
+  .overflow-hidden {
+    overflow: hidden;
+    position: relative;
+  }
+
+  img {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    margin-block: auto;
+  }
+
+  .mobile {
+    display: none;
+  }
+
+  .desktop {
+    display: block;
+  }
+
+  .box {
+    transform: translateX(-50%) translateY(26%);
+    z-index: 2;
+  }
+
+  .graphic {
+    transform: translateX(-18%);
+    z-index: 1;
+  }
+
+  .shadow {
+    transform: translateX(-56%) translateY(-7%);
+  }
 }

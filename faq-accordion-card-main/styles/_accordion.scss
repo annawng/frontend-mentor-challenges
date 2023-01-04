@@ -10,6 +10,10 @@ details {
   width: 100%;
   color: $color-neutral-dark;
 
+  &:focus {
+    outline-offset: 4px;
+  }
+
   &::-webkit-details-marker {
     display: none;
   }
@@ -23,7 +27,7 @@ details {
     pointer-events: none;
     position: absolute;
     top: 50%;
-    right: 0;
+    right: 2px;
     transform: translateY(-80%) rotate(45deg);
     transition-duration: 0.3s;
   }

@@ -1,0 +1,67 @@
+main {
+  padding: 80px 24px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+.hero {
+  margin-bottom: 24px;
+}
+
+.hero,
+.review {
+  text-align: center;
+}
+
+.reviews,
+.testimonials {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 48px;
+}
+
+.review {
+  padding: 12px;
+}
+
+.testimonials {
+  gap: 16px;
+}
+
+.testimonial {
+  border-radius: 8px;
+  padding: 36px;
+
+  img {
+    border-radius: 100%;
+    max-width: 40px;
+  }
+
+  p {
+    font-weight: 500;
+  }
+}
+
+.testimonial__buyer-info {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 24px;
+  line-height: 1.1;
+
+  p:first-child {
+    font-weight: 700;
+  }
+}
+
+.stars {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 10px;
+}

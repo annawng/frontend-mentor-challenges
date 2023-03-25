@@ -1,0 +1,35 @@
+$color-primary: hsl(300, 43%, 22%);
+$color-secondary: hsl(333, 80%, 67%);
+
+$color-neutral-dark: hsl(303, 10%, 53%);
+$color-neutral: hsl(300, 24%, 96%);
+$color-neutral-light: hsl(0, 0%, 100%);
+
+body {
+  background-color: $color-neutral-light;
+}
+
+h1 {
+  color: $color-primary;
+}
+
+.hero {
+  color: $color-neutral-dark;
+}
+
+.review {
+  background-color: $color-neutral;
+  color: $color-primary;
+  font-weight: 700;
+}
+
+.testimonial {
+  background-color: $color-primary;
+  color: $color-neutral;
+
+  &__buyer-info {
+    p:nth-child(2) {
+      color: $color-secondary;
+    }
+  }
+}

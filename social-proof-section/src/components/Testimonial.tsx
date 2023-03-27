@@ -13,7 +13,7 @@ function Testimonial({ name, message }: TestimonialProps) {
       <div className='testimonial__buyer-info'>
         <img
           src={`${import.meta.env.BASE_URL}images/image-${firstName}.jpg`}
-          alt=''
+          alt={firstName}
         />
         <div>
           <p>{name}</p>

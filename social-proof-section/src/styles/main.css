@@ -118,6 +118,13 @@ h1 {
     max-width: 420px;
   }
 }
+#root {
+  background-image: url("/public/images/bg-pattern-top-mobile.svg"), url("/public/images/bg-pattern-bottom-mobile.svg");
+  background-repeat: no-repeat, no-repeat;
+  background-size: auto, 100%;
+  background-position: top, bottom right;
+}
+
 main {
   padding: 80px 24px;
 }
@@ -187,12 +194,23 @@ h1,
   margin-bottom: 10px;
 }
 
+@media (min-width: 500px) {
+  main {
+    padding-inline: 80px;
+  }
+}
 @media (min-width: 900px) {
-  body {
+  #root {
+    background-image: url("/public/images/bg-pattern-top-desktop.svg"), url("/public/images/bg-pattern-bottom-desktop.svg");
+    background-size: auto, auto;
+    background-position: top left, bottom right;
+  }
+  main {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-inline: 6vw;
+    padding-inline: calc(6vw + 24px);
+    height: 100vh;
   }
   .top {
     display: flex;
@@ -238,7 +256,7 @@ h1,
   }
 }
 @media (min-width: 1150px) {
-  body {
+  main {
     padding-inline: 10vw;
   }
   .testimonials {

@@ -10,7 +10,7 @@ function Review({ rating, reviewer }: ReviewProps) {
     <li className='review'>
       <div className='stars'>
         {[...Array(5)].map((_, index) => (
-          <img src={starIcon} alt='' key={index} />
+          <img src={starIcon} alt='' aria-hidden='true' key={index} />
         ))}
       </div>
       <p>

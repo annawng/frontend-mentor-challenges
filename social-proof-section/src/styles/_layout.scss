@@ -35,7 +35,6 @@ h1,
 }
 
 .testimonial {
-  border-radius: 8px;
   padding: 36px;
 
   img {
@@ -46,6 +45,11 @@ h1,
   p {
     font-weight: 500;
   }
+}
+
+.review,
+.testimonial {
+  border-radius: 8px;
 }
 
 .testimonial__buyer-info {
@@ -64,4 +68,86 @@ h1,
   justify-content: center;
   gap: 8px;
   margin-bottom: 10px;
+}
+
+@media (min-width: 900px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-inline: 6vw;
+  }
+
+  .top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 80px;
+  }
+
+  .hero {
+    text-align: start;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin-bottom: 0;
+  }
+
+  .reviews {
+    margin-top: 0;
+  }
+
+  .review {
+    padding: 16px 32px;
+  }
+
+  .testimonials {
+    flex-direction: row;
+  }
+
+  .testimonial {
+    height: fit-content;
+
+    &:nth-child(2) {
+      margin-top: 2rem;
+    }
+
+    &:nth-child(3) {
+      margin-top: 4rem;
+    }
+  }
+}
+
+@media (min-width: 1000px) {
+  .review {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+  }
+
+  .stars {
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: 1150px) {
+  body {
+    padding-inline: 10vw;
+  }
+
+  .testimonials {
+    gap: 30px;
+  }
+
+  .review {
+    width: 420px;
+
+    &:nth-child(1) {
+      margin-left: -10rem;
+    }
+
+    &:nth-child(2) {
+      margin-left: -5rem;
+    }
+  }
 }

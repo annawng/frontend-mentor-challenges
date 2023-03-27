@@ -5,8 +5,10 @@ import TestimonialSection from './components/TestimonialSection';
 function App() {
   return (
     <main>
-      <HeroMessage />
-      <ReviewSection />
+      <div className='top'>
+        <HeroMessage />
+        <ReviewSection />
+      </div>
       <TestimonialSection />
     </main>
   );

@@ -84,13 +84,14 @@ body {
   font-size: 1.6rem;
 }
 
-.hero h1 {
+h1 {
   font-size: 4.1rem;
   line-height: 0.8;
   max-width: 260px;
   margin-inline: auto;
   letter-spacing: -0.2rem;
 }
+
 .hero p {
   font-size: 1.8rem;
   font-weight: 500;
@@ -98,6 +99,25 @@ body {
   letter-spacing: -0.02rem;
 }
 
+@media (min-width: 500px) {
+  h1 {
+    max-width: 400px;
+  }
+  .hero p {
+    max-width: 560px;
+    margin-inline: auto;
+  }
+}
+@media (min-width: 900px) {
+  h1 {
+    font-size: 5.6rem;
+    max-width: 400px;
+    margin-inline: 0;
+  }
+  .hero p {
+    max-width: 420px;
+  }
+}
 main {
   padding: 80px 24px;
 }
@@ -135,7 +155,6 @@ h1,
 }
 
 .testimonial {
-  border-radius: 8px;
   padding: 36px;
 }
 .testimonial img {
@@ -144,6 +163,11 @@ h1,
 }
 .testimonial p {
   font-weight: 500;
+}
+
+.review,
+.testimonial {
+  border-radius: 8px;
 }
 
 .testimonial__buyer-info {
@@ -161,4 +185,72 @@ h1,
   justify-content: center;
   gap: 8px;
   margin-bottom: 10px;
+}
+
+@media (min-width: 900px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-inline: 6vw;
+  }
+  .top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 80px;
+  }
+  .hero {
+    text-align: start;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin-bottom: 0;
+  }
+  .reviews {
+    margin-top: 0;
+  }
+  .review {
+    padding: 16px 32px;
+  }
+  .testimonials {
+    flex-direction: row;
+  }
+  .testimonial {
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  .testimonial:nth-child(2) {
+    margin-top: 2rem;
+  }
+  .testimonial:nth-child(3) {
+    margin-top: 4rem;
+  }
+}
+@media (min-width: 1000px) {
+  .review {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+  }
+  .stars {
+    margin-bottom: 0;
+  }
+}
+@media (min-width: 1150px) {
+  body {
+    padding-inline: 10vw;
+  }
+  .testimonials {
+    gap: 30px;
+  }
+  .review {
+    width: 420px;
+  }
+  .review:nth-child(1) {
+    margin-left: -10rem;
+  }
+  .review:nth-child(2) {
+    margin-left: -5rem;
+  }
 }/*# sourceMappingURL=main.css.map */

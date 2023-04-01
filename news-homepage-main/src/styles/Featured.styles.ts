@@ -30,6 +30,6 @@ export const Button = styled.button`
   width: fit-content;
 
   &:hover {
-    background-color: var(--soft-orange);
+    background-color: var(--very-dark-grayish-blue);
   }
 `;

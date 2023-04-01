@@ -4,8 +4,9 @@ import {
   Container,
   Image,
   Content,
-  Number,
   Title,
+  Number,
+  Name,
   Teaser,
 } from '../styles/Article.styles';
 
@@ -23,7 +24,7 @@ function Article({ index, name, description, imageFile }: ArticleProps) {
       <Content>
         <Title>
           <Number>{String(index).padStart(2, '0')}</Number>
-          {name}
+          <Name>{name}</Name>
         </Title>
         <Teaser>{description}</Teaser>
       </Content>

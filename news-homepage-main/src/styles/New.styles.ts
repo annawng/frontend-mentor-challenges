@@ -18,6 +18,12 @@ export const Title = styled.h3`
   color: var(--off-white);
   font-size: 2rem;
   margin-bottom: 8px;
+  cursor: pointer;
+  transition: 0.2s;
+
+  &:hover {
+    color: var(--soft-orange);
+  }
 `;
 
 export const Teaser = styled.p`

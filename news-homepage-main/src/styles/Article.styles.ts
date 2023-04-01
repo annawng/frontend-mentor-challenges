@@ -16,15 +16,24 @@ export const Content = styled.div`
   gap: 8px;
 `;
 
+export const Title = styled.h3`
+  color: var(--very-dark-grayish-blue);
+  font-weight: 800;
+`;
+
 export const Number = styled.span`
   display: block;
   color: var(--grayish-blue);
   font-size: 3rem;
 `;
 
-export const Title = styled.h3`
-  color: var(--very-dark-grayish-blue);
-  font-weight: 800;
+export const Name = styled.span`
+  cursor: pointer;
+  transition: 0.2s;
+
+  &:hover {
+    color: var(--soft-red);
+  }
 `;
 
 export const Teaser = styled.p`

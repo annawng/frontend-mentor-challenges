@@ -1,9 +1,17 @@
 import React, { useState } from 'react';
-import { NavLink } from 'react-router-dom';
 
 import logo from '../assets/logo.svg';
 import hamburgerIcon from '../assets/icon-menu.svg';
-import { Nav, Menu, MenuItem } from '../styles/NavBar.styles';
+import closeIcon from '../assets/icon-menu-close.svg';
+import {
+  Nav,
+  Icons,
+  Icon,
+  Menu,
+  MenuItem,
+  Link,
+  Overlay,
+} from '../styles/NavBar.styles';
 
 function NavBar() {
   const [showMenu, setShowMenu] = useState(false);
@@ -13,33 +21,46 @@ function NavBar() {
   };
 
   return (
-    <Nav>
-      <img src={logo} alt='W News' />
-      <img
-        src={hamburgerIcon}
-        alt='Open menu'
-        className='menu-icon'
-        onClick={toggleMenu}
-      />
+    <>
+      <Overlay className={`${showMenu && 'menu-active'}`}></Overlay>
+      <Nav className={`${showMenu && 'menu-active'}`}>
+        <Icons>
+          <img src={logo} alt='W News' />
+          <Icon
+            src={hamburgerIcon}
+            alt='Open menu'
+            className='menu-icon'
+            onClick={toggleMenu}
+          />
+        </Icons>
 
-      <Menu className={`menu ${showMenu && 'active'}`}>
-        <MenuItem>
-          <NavLink to='/'>Home</NavLink>
-        </MenuItem>
-        <MenuItem>
-          <NavLink to='/'>New</NavLink>
-        </MenuItem>
-        <MenuItem>
-          <NavLink to='/'>Popular</NavLink>
-        </MenuItem>
-        <MenuItem>
-          <NavLink to='/'>Trending</NavLink>
-        </MenuItem>
-        <MenuItem>
-          <NavLink to='/'>Categories</NavLink>
-        </MenuItem>
-      </Menu>
-    </Nav>
+        <Menu className={`menu ${showMenu && 'active'}`}>
+          <Icon
+            src={closeIcon}
+            alt='Open menu'
+            className='close-icon'
+            onClick={toggleMenu}
+          />
+          <div className='links'>
+            <MenuItem>
+              <Link to='/'>Home</Link>
+            </MenuItem>
+            <MenuItem>
+              <Link to='/'>New</Link>
+            </MenuItem>
+            <MenuItem>
+              <Link to='/'>Popular</Link>
+            </MenuItem>
+            <MenuItem>
+              <Link to='/'>Trending</Link>
+            </MenuItem>
+            <MenuItem>
+              <Link to='/'>Categories</Link>
+            </MenuItem>
+          </div>
+        </Menu>
+      </Nav>
+    </>
   );
 }
 

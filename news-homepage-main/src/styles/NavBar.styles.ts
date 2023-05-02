@@ -48,7 +48,7 @@ export const Overlay = styled.div`
   }
 `;
 
-export const Menu = styled.ul`
+export const Menu = styled.div`
   display: block;
 
   .links {

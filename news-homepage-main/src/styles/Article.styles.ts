@@ -4,6 +4,7 @@ export const Container = styled.article`
   display: flex;
   gap: 24px;
   align-items: center;
+  margin-bottom: 32px;
 `;
 
 export const Image = styled.img`

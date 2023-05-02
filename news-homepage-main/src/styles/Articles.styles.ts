@@ -5,4 +5,8 @@ export const Container = styled.section`
   flex-direction: column;
   gap: 32px;
   padding-bottom: 80px;
+
+  @media (max-width: 999px) {
+    margin-block: 56px;
+  }
 `;

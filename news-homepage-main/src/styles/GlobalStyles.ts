@@ -52,6 +52,14 @@ export default createGlobalStyle`
     font-size: 1.5rem;
     height: fit-content;
     padding-inline: 16px;
+
+    @media (min-width: 600px) {
+      padding-inline: 8%;
+    }
+
+    @media (min-width: 1250px) {
+      padding-inline: 10%;
+    }
   }
 `;
 

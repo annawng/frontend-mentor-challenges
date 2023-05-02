@@ -21,6 +21,11 @@ export const Nav = styled.nav`
   &.menu-active {
     background-color: transparent;
   }
+
+  @media (min-width: 800px) {
+    padding-bottom: 56px;
+    font-size: 1.6rem;
+  }
 `;
 
 export const Icon = styled.img`
@@ -48,7 +53,7 @@ export const Menu = styled.ul`
 
   .links {
     display: flex;
-    gap: 24px;
+    gap: 32px;
   }
 
   @media (max-width: 599px) {
@@ -65,6 +70,7 @@ export const Menu = styled.ul`
 
     .links {
       flex-direction: column;
+      gap: 24px;
 
       a {
         color: var(--very-dark-grayish-blue);

@@ -2,7 +2,6 @@ import React from 'react';
 
 import Article from './Article';
 import { HiddenH2 } from '../styles/GlobalStyles';
-import { Container } from '../styles/Articles.styles';
 
 interface ArticleInfo {
   name: string;
@@ -30,7 +29,7 @@ const articleList: ArticleInfo[] = [
 
 function Articles() {
   return (
-    <Container>
+    <>
       <HiddenH2>Articles</HiddenH2>
       {articleList.map((article: ArticleInfo, index: number) => (
         <Article
@@ -41,7 +40,7 @@ function Articles() {
           imageFile={article.imageFile}
         />
       ))}
-    </Container>
+    </>
   );
 }
 

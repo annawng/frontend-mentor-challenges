@@ -6,12 +6,15 @@ export const Container = styled.section`
   display: flex;
   flex-direction: column;
   gap: 24px;
-  margin-block: 56px;
+
+  @media (max-width: 999px) {
+    margin-block: 56px;
+  }
 `;
 
 export const Heading = styled.h2`
   color: var(--soft-orange);
-  font-size: 3.2rem;
+  font-size: 3.6rem;
 `;
 
 export const Title = styled.h3`
@@ -33,4 +36,5 @@ export const Teaser = styled.p`
 
 export const Line = styled.hr`
   border: 0.5px solid var(--dark-grayish-blue);
+  margin-block: 4px;
 `;

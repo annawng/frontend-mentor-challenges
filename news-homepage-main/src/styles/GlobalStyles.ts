@@ -52,6 +52,7 @@ export default createGlobalStyle`
     font-size: 1.5rem;
     height: fit-content;
     padding-inline: 16px;
+    background-color: var(--off-white);
 
     @media (min-width: 600px) {
       padding-inline: 8%;

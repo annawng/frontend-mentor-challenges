@@ -41,7 +41,7 @@ function NavBar() {
             className='close-icon'
             onClick={toggleMenu}
           />
-          <div className='links'>
+          <ul className='links'>
             <MenuItem>
               <Link to='/'>Home</Link>
             </MenuItem>
@@ -57,7 +57,7 @@ function NavBar() {
             <MenuItem>
               <Link to='/'>Categories</Link>
             </MenuItem>
-          </div>
+          </ul>
         </Menu>
       </Nav>
     </>

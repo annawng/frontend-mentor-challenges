@@ -47,4 +47,13 @@ h6 {
 #root,
 #__next {
   isolation: isolate;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 1.6rem;
 }/*# sourceMappingURL=main.css.map */
